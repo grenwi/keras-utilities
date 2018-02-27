@@ -1,6 +1,6 @@
 from keras import backend as K
 from keras import constraints
-from keras import initializations
+from keras import initializers
 from keras import regularizers
 from keras.engine.topology import Layer
 
