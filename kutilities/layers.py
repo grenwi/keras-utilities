@@ -75,7 +75,7 @@ class Attention(Layer):
             model.add(Attention())
         """
         self.supports_masking = True
-        self.init = initializations.get('glorot_uniform')
+        self.init = initializers.get('glorot_uniform')
 
         self.W_regularizer = regularizers.get(W_regularizer)
         self.b_regularizer = regularizers.get(b_regularizer)
@@ -162,7 +162,7 @@ class AttentionWithContext(Layer):
                  bias=True, **kwargs):
 
         self.supports_masking = True
-        self.init = initializations.get('glorot_uniform')
+        self.init = initializers.get('glorot_uniform')
 
         self.W_regularizer = regularizers.get(W_regularizer)
         self.u_regularizer = regularizers.get(u_regularizer)
